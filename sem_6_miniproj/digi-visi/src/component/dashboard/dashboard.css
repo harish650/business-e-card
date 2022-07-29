@@ -1,0 +1,97 @@
+/* *{
+    background-color: rgba(255, 255, 255, 0.068);
+} */
+
+/* .img:hover{
+    transition: 0.3s;
+     color:blue;
+    background-color: rgba(255, 255, 255, 0.658);
+    border: 2px solid blue;
+} */
+
+/* .sidenav{height: 100%;  width: 0%;  position: fixed; z-index: 1; top: 0; left: 0; background-color:#232323; transition: .5s ease; overflow-x: hidden; padding-top: 20px; display: flex; flex-direction: column; align-items: center;}
+
+button{
+    background-color: green;
+} */
+
+/* body{
+    /* background-image:url( "../../images/ds.jpg"); */
+    .dash{
+        display: flex;
+        /* margin-bottom: 500px; */
+    }
+
+
+    .collapse-navbar-collapse{
+        display: flex;
+            align-content: flex-end;
+    }
+
+   .logo{
+       
+       margin-right: 950px;
+   }
+   .dashwhole{
+       background-color: rgb(2, 6, 52);
+   }
+   .timer{
+       border:2px solid ;
+       border-style: none;
+       height:200px;
+       width:320px;
+      margin-left: 130px;
+      margin-top: 50px;
+      background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,0.630987429151348) 0%, rgba(253,250,29,0.6449930313922444) 50%, rgba(69,252,93,0.49093140674238445) 100%);
+      
+border-radius: 30px;
+    display: flex;
+
+   }
+
+   .time{
+       margin-top: 50px;
+       margin-left: 40px;
+       color: rgb(2, 49, 72);
+       font-size: 50px;
+   }
+   .hourglass{
+    margin-top: 65px;
+       height: 40px;
+       width:40px
+   }
+   .timer:hover{
+    box-shadow: 10px 10px 5px rgb(189, 3, 3);
+       transform: scale(1.1);
+   }
+   .chatbot{
+       height: 95px;
+       width:90px;
+       position: relative;
+       margin-top: 160px;
+       margin-left: 400px;
+      
+       transform: rotate(90deg);
+       transform: rotateY(180deg);
+   
+    }
+   .chatbot:hover{
+     
+    
+      transform: scale(1.1);
+   }
+
+   @-webkit-keyframes shake {
+    0%, 100% {-webkit-transform: translateX(0);} 
+    10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);} 
+    20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);} 
+ }
+ 
+ @keyframes shake { 
+    0%, 100% {transform: translateX(0);} 
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);} 
+    20%, 40%, 60%, 80% {transform: translateX(10px);} 
+ }
+ 
+ 

@@ -1,0 +1,15 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+.chart{
+  margin-top:50px ;
+  margin-bottom:50px ;
+
+     background-color: rgba(29, 29, 207, 0.25); 
+     border-radius: 50px;
+}  
+.chart:hover{
+  transform:scale(1.2);
+  box-shadow: 10px 10px 5px lightblue;
+}

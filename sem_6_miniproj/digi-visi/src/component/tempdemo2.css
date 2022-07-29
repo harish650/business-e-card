@@ -1,0 +1,121 @@
+.tempdemo2-whole{
+      height:600px;
+      width:400px;     
+      margin-left:580PX;
+      margin-top:100px;
+      background-color: rgba(240, 248, 255, 0.411);
+      border-radius: 30px;
+      /* position:absolute; */
+}
+
+.tempdemo2-top{
+      /* position: relative; */
+      height:250px;
+      width:400px;
+      border-radius: 30px;
+      background-color: black;
+}
+.tempddemo2-header{
+    
+      display: flex;
+      line-height: 125px;
+      
+}
+.tempdemo2-headerone{
+
+      color:rgba(220, 229, 235, 0.594);
+      margin-top:125px;
+      margin-left: 4px;
+}
+.tempdemo2-headertwo{
+
+      color: white;
+      margin-top:125px;
+      margin-left: 3px;
+}
+
+.tempdemo2-headerlogo{
+
+      height:30px;
+      width:30px;
+      margin-left:90px;
+      margin-top: 125px;
+}
+
+.tempdemo2-heder-border{
+      
+      position: absolute;
+      height:100px;
+      width:400px;
+      top:185px;
+}
+.bottom_img{
+      bottom:54px;
+      width:400px;position:fixed;
+      border-radius: 30px;
+
+}
+.tempdemo2-no{
+      position: fixed;
+      right:580px;
+      color: rgba(255, 255, 255, 0.822);
+      font-size: 12px;
+      font-weight: 200;
+      margin-top: 30px;
+}
+
+.td2-twitter{
+      margin-top:40px;
+      margin-left:30px;
+height:30px;
+width:30px;
+}
+.tempdemoprofile{
+      height:120px;
+      width:90px;
+      position: fixed;
+right:600px;
+border-radius: 30px;
+}
+
+.whatsapptempdemo2{
+      margin-top:10px;
+      margin-left:30px;
+      height:30px;
+      width:30px;
+      
+}
+
+.gmailtempdemo2{
+      margin-top: 10px;
+      margin-left: 30px;
+      height:30px;
+      width:30px;
+}
+.googlepaytempdemo2{
+      margin-top: 10px;
+      margin-left: 30px;
+      height:33px;
+      width:33px;
+}
+.githubtempdemo2{
+      margin-top: 20px;
+      position: fixed;
+      height: 50px;
+      width:50px;
+      margin-left:20px;
+      background-color: rgba(139, 130, 130, 0.724);
+      border-radius: 30px;
+}
+/* .tempdemo2-back{
+      height:600px;
+      width:400px;     
+      margin-left:580PX;
+      margin-top:100px;
+      background-color: rgba(240, 248, 255, 0.411);
+      border-radius: 30px;
+      position:absolute;
+      color: rgba(255, 255, 255, 0.822);
+      font-size: 12px;
+      font-weight: 200;
+} */

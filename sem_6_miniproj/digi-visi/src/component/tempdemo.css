@@ -1,0 +1,324 @@
+
+
+.wholecontent{
+    
+   margin-top: 50px;
+margin-left: 520px;
+    height: 680px;
+    width:500px;
+    background-color: rgba(255, 255, 255, 0.331);
+    /* background-color: bisque; */
+    border:2px;
+    border-radius: 20px;
+    
+}
+
+.content{
+    height: 580px;
+    width: 500px;
+    overflow:auto;
+    padding-left: 0%;
+    
+}
+.bottomnav{
+    position: fixed;
+    bottom:23px;
+border-top: 2px ;
+border-radius: 30px;
+    display: flex;
+    width: 500px;
+    overflow: auto;
+    background-color: rgb(205, 220, 216);
+    
+    
+}
+.icons{
+    height: 40px;width: 40px;
+    margin: 20px;
+    margin-left: 60px;
+}
+.bottomnav::-webkit-scrollbar {
+   
+   width: 2px;
+    height: 10px;
+  }
+  
+  /* Track */
+  .bottomnav::-webkit-scrollbar-track {
+    background: 
+    rgb(66, 153, 86); 
+    border-radius: 20px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+   
+  /* Handle */
+  .bottomnav::-webkit-scrollbar-thumb {
+    background: rgb(5, 96, 152); 
+    border-radius: 100px;
+  }
+  
+  /* Handle on hover */
+  .bottomnav::-webkit-scrollbar-thumb:hover {
+    background: rgb(150, 22, 161); 
+  }
+  .content::-webkit-scrollbar {
+   
+    width: 0px;
+     height: 0px;
+   }
+   .profile{ 
+    
+     height:240px;
+     background: rgb(131,58,180);
+     background: linear-gradient(90deg, rgba(131,58,180,0.630987429151348) 7%, rgba(69,252,93,0.49093140674238445) 89%);
+     
+     border-radius: 20px;
+    
+   }
+
+   .profileimage{
+     margin-top: 60px;
+     margin-left: 150px;
+     height: 120px;
+     border-radius: 50%;
+   }
+   .name{
+     margin-top:10px;
+     margin-left:140px;
+     color: rgb(21, 4, 90);
+     font-style: bold;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+   .contact{
+     margin-top: 20px;
+     height:100px;
+     color: rgb(30, 28, 28);
+     background-color: rgba(184, 200, 214, 0.858);
+     border-radius: 10px;
+   }
+   .details{
+      margin-top: 20px;
+      margin-left: 17px;
+      margin-right: 17px;
+     height: 300px;
+      border-radius: 20px;background-color: rgba(237, 244, 250, 0.858);
+      color:black;
+   }
+
+   .socialmedialinks{
+    margin-top: 20px;
+    height:100px;
+    color: black;
+    background-color: rgba(237, 244, 250, 0.858);
+    border-radius: 10px;
+   }
+   .sharecard{
+     margin-top: 70px;
+     height: 350px;
+     background-color: rgba(237, 244, 250, 0.858);
+     border-radius: 10px;
+   }
+   .headshare{
+    align-items: center;
+    color: rgb(23, 3, 158);
+   font-size: 25px;
+   font-family: 'Times New Roman', Times, serif;
+   margin-left: 160px;
+  }
+   .email{
+     margin-top: 5px;
+     color: rgb(23, 3, 158);
+     font-size: 25px;
+     font-family: 'Times New Roman', Times, serif;
+   }
+   .emailinput{
+     background-color: rgba(109, 105, 105, 0.114);
+     width:380px;
+     margin-left: 60px;
+     border: 0px;
+     border-radius: 20px;
+     
+
+   }
+   .phoneno{
+    color: rgb(23, 3, 158);
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 55px;
+   }
+   .phoneinput{
+    background-color: rgba(109, 105, 105, 0.114);
+    width:380px;
+    margin-left: 60px;
+    border: 0px;
+    border-radius: 20px;
+   }
+
+.constacticons{
+  height:50px;
+  width:50px;
+  margin:20px;
+  margin-left: 50px;
+}
+.socialmedialinksicons{
+  height:50px;
+  width:50px;
+  margin:20px;
+  margin-left: 75px;
+}
+ .aboutus{
+   margin-top: 20px;
+   height:350px;
+   background-color: rgba(237, 244, 250, 0.858);
+   border-radius: 10px;
+   color: black;
+ }
+ .detailsicons{
+   height: 30px;
+   width:30px;;
+ }
+ .abouthead{
+   margin-top: 20px;
+   margin-left: 190px;
+   color: rgb(25, 158, 207);
+ }
+ .aboutcontent{
+   margin:15px;
+   font-size: 20px;
+
+  
+ }
+ .gstlogo{
+   
+   height: 60px;
+   width: 60px;
+ }
+ .products{
+   margin-top: 20px;
+    height:600px;
+ background-color:rgba(237, 244, 250, 0.858);
+ border-radius: 20px;
+ }
+ .prodicon{
+   height: 100px;
+   width: 100px;
+   margin-left: 130px;
+   border-radius: 10px;
+ }
+ .prohead{
+  margin-top: 20px;
+  margin-left: 180px;
+  color: rgb(25, 158, 207);
+ }
+ .proname{
+   color: black;
+   font-size: 18px;
+   margin-left: 140px;
+ }
+ .prodiconlast{
+  height: 100px;
+  width: 100px;
+  margin-left: 200px;
+  border-radius: 10px;
+ }
+ .prodicon1st{
+   margin-left: 50px;
+   height: 100px;
+   width: 100px;
+   border-radius: 10px;
+   }
+   .proname1{
+    color: black;
+    font-size: 18px;
+    margin-left: 40px;
+   }
+   .prodicon2{
+    height: 100px;
+    width: 100px;
+    margin-left: 110px;
+    border-radius: 10px;
+  }
+  .proname2{
+    color: black;
+    font-size: 18px;
+    margin-left: 100px;
+   }
+   .pronamel{
+    color: black;
+    font-size: 18px;
+    margin-left: 210px;
+   }
+   .location{
+     margin-top: 20px;
+     height:250px;
+     width:400px;
+     margin-left: 50px;;
+     background-color: rgba(237, 244, 250, 0.858);
+     border-radius: 20px;
+   }
+   .lochead{
+    margin-top: 20px;
+    margin-left: 150px;
+    color: rgb(25, 158, 207);
+  
+   }
+   .branches{
+     margin-top: 20px;
+     height:200px;
+     background-color: rgba(237, 244, 250, 0.858);
+     border-radius: 20px;;
+   }
+   .branhead{
+    margin-top: 20px;
+    margin-left: 180px;
+    color: rgb(25, 158, 207);
+   }
+   .branch1{
+     color:black;
+     margin:10px;
+     font-size: 20px;
+   }
+   .payment{
+     margin-top: 20px;
+    height:450px;
+    border-radius: 20px;
+    background-color: rgba(237, 244, 250, 0.858);
+   }
+   .payhead{
+    margin-top: 20px;
+    margin-left: 190px;
+     color: rgb(25, 158, 207);
+   }
+   .payicon{
+     height:40px;
+     width:40px;
+     margin-left:120px;
+     margin-top: 20px;
+   }
+   .no{
+     color:black;
+     font-size: 20px;
+     margin-top: 26px;
+     margin-left: 40px;
+   }
+   .gallery{
+     margin-top: 20px;
+     height:400px;
+     background-color:rgba(237, 244, 250, 0.858) ;
+     border-radius: 20px;
+     display: flex;
+     flex-direction: column;
+    }
+    .galhead{
+      margin-top: 20px;
+    margin-left: 190px;
+     color: rgb(25, 158, 207);
+    }
+   .galicon{
+     height: 100px;
+     width:100px;
+     margin-left: 180px;
+     border-radius: 20px;
+    }
+    

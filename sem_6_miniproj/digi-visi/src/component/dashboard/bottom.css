@@ -1,0 +1,21 @@
+
+
+
+.bottombar{
+  /* position:fixed; */
+    /* margin-left:300px; */
+  width: 70%;
+  border: 3px solid white;
+/* padding:7px; */
+height: 70px;
+margin-top: 37px;
+border-radius: 20px;
+    margin-left:250px; 
+    background-color: rgb(251, 251, 252); 
+    box-shadow: 10px 10px 5px rgb(16, 22, 24);
+    font-size: 7px;
+}
+.bottom-card:hover{
+  /* transform: translate3d(0px,0px,20px);  */
+  transform: scale(1.5);
+}
