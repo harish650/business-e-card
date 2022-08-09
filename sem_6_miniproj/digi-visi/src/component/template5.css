@@ -1,0 +1,52 @@
+.template5_pos{
+    position: absolute;
+    background-color: rgb(232, 244, 244);
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    margin-left: 570px;
+    margin-right: 600px;
+    margin-top: 80px;
+    margin-bottom:40px;
+    padding-left: 200px;
+}
+.vl{
+    position: absolute;
+    margin-top: 280px;
+    height:190px;
+   border-left: 2px solid rgb(14, 15, 14);
+   left:50%;
+   margin-left: -2%;
+   top:0
+   
+}
+.template5_loc{
+    height:30px;
+    width:30px;
+    margin-left: -120px;
+    margin-top: -200px;
+}
+.template5_phone{
+    height:30px;
+    width:30px;
+    margin-left: 130px;
+    margin-top: -200px;
+}
+.template5_mail{
+    height:30px;
+    width:30px;
+    margin-left: -190px;
+}
+.template5_net{
+    height:30px;
+    width:30px;   
+    margin-left: 130px;
+}
+.template5_women{
+ position:absolute;  
+    height:250px;
+    width:366px;
+    margin-top: -408px;
+    margin-left: -270px;
+}

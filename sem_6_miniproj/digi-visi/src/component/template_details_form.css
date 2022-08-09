@@ -1,0 +1,286 @@
+
+
+.temlpate_details_form_form{
+position: fixed;
+background-color: rgba(255, 255, 255, 0.792);
+overflow-y: auto;
+top: 70px;
+left:225px ;
+height:600px;
+width: 1100px;
+border-radius: 20px;
+/* background-image:url('../images/details_wall3.jpg'); */
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+
+}
+.template_details_form_leftside{
+       height:200px;
+       
+      position: fixed;
+      bottom:-120px;
+      left:80px;
+       display: flex;
+       border-radius: 100px;
+      
+       background-color:rgba(59, 69, 181, 0.295);
+}
+
+.template_details_form_leftside_parti{
+       /* padding:50px; */
+       font-size: 21px;
+       padding-left: 50px;
+       padding-right: 50px;
+       padding-top: 30px;
+       font-weight: 300;
+       font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.template_details_form_navbar{
+        position:sticky;
+       top:10px;
+       height: 70px;
+       background-color: rgba(38, 46, 135, 0.295);
+       width: 100%;
+}
+.navdetailstemplatedetails{
+       position: fixed;
+       right: 30px;
+       top:20px;
+       font-size: 23px;
+       padding: 5px;
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       background-color: rgba(16, 107, 92, 0.886);
+       border-radius: 10px;
+       color: white;
+}
+.back-template-details-form{
+       height:35px;
+       width:35px;
+       margin-top: 18px;
+       margin-left:30px;
+}
+/* .details_form_step{
+       display: none;
+}
+.details_form_step_active{
+       display: block;
+} */
+.details_form_particular_downval{
+       padding:10px ;
+
+       height:70px;
+       width: 170px;
+       border-radius: 20px;
+       background-color: white;
+       /* font-size: 23px; */
+       
+}
+.temlpate_details_form_form::-webkit-scrollbar {
+   
+       width: 0px;
+        height: 0px;
+      }
+
+.template_Details_fromContactno{
+       margin-top:40px;
+       width: 400px;
+       border-radius: 10px;
+       margin-right: 160px;
+       margin-left: 60px;}      
+.template_details_from_email{
+       margin-top: 50px;
+       width: 400px;
+       border-radius: 10px;
+       margin-left: 20px;
+       margin-left: 60px;
+}
+.template_details_from_Whatsappno{
+       margin-top: 50px;
+       width: 400px;
+       border-radius: 10px;
+       margin-left: 20px;
+       margin-left: 60px;
+}
+.template_details_from_Address_line_1{
+       margin-top: 10px;
+       width: 400px;
+       border-radius: 10px;
+       margin-left: 20px;
+
+}
+.template_details_from_Address_line_2{
+       margin-top: 30px;
+       width: 400px;
+       border-radius: 10px;
+       margin-left: 20px;
+
+}
+.template_details_from_City{
+       margin-top: 30px;
+       width: 400px;
+       border-radius: 10px;
+       margin-left: 20px;
+
+}
+.template_details_from_State{
+       margin-top: 30px;
+       width: 400px;
+       border-radius: 10px;
+       margin-left: 20px;
+
+}
+.template_details_from_Pincode{
+       margin-top: 30px;
+       width: 400px;
+       border-radius: 10px;
+       margin-left: 20px;
+
+}
+.template_details_from_Country{
+       margin-top: 30px;
+       width: 400px;
+       border-radius: 10px;
+       margin-left: 20px;
+
+}
+.details_back{
+  margin-left: 230px;
+  margin-right: 20px;
+  margin-top:30px ;
+  width: 80px;;
+       height: 40px;
+       border-radius: 8px;
+       background-color:aqua;
+}
+.details_next{
+       margin-left: 500px;
+       margin-top:30px ;
+       width: 80px;;
+       height: 40px;
+       border-radius: 8px;
+       background-color:aquamarine;
+}
+.templat_Details_aout{
+       margin-top: 40px;
+       margin-left: 520px;
+       margin-bottom: 40px;
+       font-style: bold;
+       font-weight: 500px;
+       font-size: large;
+}
+.rteboutus{
+       height: 300px;
+       width:900px;
+       border-radius: 60px;
+       margin-left: 100px;
+       overflow-y: auto;
+}
+.template_details_logohead{
+       margin:50px;
+       margin-left: 390px;
+       font-size: 25px;
+}
+.template_details_logo{
+      width: 30px;
+      border-radius: 50%;
+      margin-left: 390px;
+}
+.template_details_branches{
+       margin-top:50px;
+       margin-left: 390px;
+       width:320px;
+       border-radius: 10px;
+       background-color: rgb(200, 153, 236);
+       border:0px;
+       /* text-shadow: 2px 2px 4px #000000; */
+       /* justify-content: center; */
+}
+.template_details_photos{
+       width: 30px;
+      border-radius: 50%;
+      margin-left: 390px;
+}
+.template_details_photodhead{
+       margin-left: 470px;
+       font-size: 25px;
+}
+.template_details_Gpay,.template_details_Phonepay,.template_details_Netbanking,.template_details_credit_card,.template_details_Debit_card,.template_details_Paytm{
+       margin-top: 30px;
+       width:300px;
+       margin-left: 160px;
+       border-radius: 10px;
+}
+.template_details_filr{
+       margin-left: -20px;
+       margin-top: 30px;
+       background-color: rgba(255, 255, 255, 0);
+       /* width: 100px; */
+}
+.template_details_submit_btn{
+       margin-left: 800px;
+       border-radius: 10px;
+       height: 40px;
+       width: 70px;
+       background-color: rgb(217, 98, 189);
+}
+.details_form_step111{
+       /* position: absolute; */
+       height: 500px;
+       width: 500px;
+       background-color: antiquewhite;
+       border-radius: 10px;
+       overflow-y: auto;
+       
+}
+.template_details_socoo{
+       margin-top: 40px;
+       margin-left: 70px;
+       width:180px;
+}
+.template_details_ids{
+       position: fixed;
+       right:300px;
+       top: 120px;
+       height: 400px;
+       width: 300px;
+       overflow-y: auto;
+       border-radius: 20px;
+       background-color: rgba(0, 0, 0, 0.272);
+}
+
+ .template_details_ids::-webkit-scrollbar {
+   
+       width: 12px;
+        height: 10px;
+        margin-right: 20px;    
+         }
+      
+      /* Track */
+.template_details_ids::-webkit-scrollbar-track {
+        background: 
+        rgb(66, 153, 86); 
+        border-radius: 20px;
+        
+      }
+       
+      /* Handle */
+.template_details_ids::-webkit-scrollbar-thumb {
+        background: rgb(5, 96, 152); 
+        border-radius: 100px;
+        margin-right: 20px;    
+
+      }
+      
+      /* Handle on hover */
+  .template_details_ids::-webkit-scrollbar-thumb:hover {
+        background: rgb(150, 22, 161); 
+        margin-right: 20px;    
+
+      }
+      .template_details_ids::-webkit-scrollbar {
+       
+        
+        margin-right: 20px;    
+
+       } 

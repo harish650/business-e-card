@@ -1,0 +1,121 @@
+.editemp_whole{
+    height: 700px;
+    width:1400px;
+    background-color: white;
+    margin-top: 25px;
+    margin-left: 70px;
+    border-radius: 20px;
+    display: flex;
+}
+.edittemp_centrbor{
+    border-left: 2px dashed;
+    height: 700px;
+    position: fixed;
+    left:769px;
+}
+.edittmep_temp{
+    height: 650px;
+    width: 600px;
+    background-color: rgba(0, 0, 0, 0.064);
+    position: fixed;
+    top:50px;
+    right:100px;
+    border-radius: 20px;
+
+}
+.edittmep_form{
+    height: 650px;
+    width: 600px;
+    background-color: rgba(0, 0, 0, 0.064);
+    position: fixed;
+    top:50px;
+    left:100px;
+    border-radius: 20px;
+}
+.edittemp_btn{
+    border-radius: 8px;
+    color: white;
+    background-color: rgba(9, 9, 59, 0.58);
+    margin:10px;
+    margin-left: 30px;
+
+}
+
+.edittemp_btn:hover{
+    margin:2px;
+    margin-left: 30px;
+    height: 50px;
+    width:150px;
+}
+.edittemp_form_content{
+    overflow-y: auto;
+    height: 550px;
+    width:450px;
+    background-color: white;
+    margin-left: 70px;
+    border-radius: 20px;
+}
+.edittemp_Contactno{
+    width:200px;
+    height:34px;
+    margin-left: 120px;
+}
+.edittemp_form_content::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;    
+
+   } 
+
+.edittemp_email{
+    margin-top: 20px;
+    width:200px;
+    height:34px;
+    margin-left: 120px;
+}
+.edittemp_Whatsappno,.editform_Country,.editform_Pincode,.editform_State,.editform_City,.editform_Address_line_2,.editform_Address_line_1{
+    margin-top: 20px;
+    width:200px;
+    height:34px;
+    margin-left: 120px;
+}
+.editform_step111{
+    overflow-y: auto;
+}
+.editform_ids{
+    position: fixed;
+    height: 200px;
+    width: 450px;
+    bottom: 10px;
+    overflow-x: auto;
+}
+.edittemp_editor:hover ~ edittemp_form_content{
+   
+    width:500px;
+}
+.edittemp_logohead{
+    margin-left: 110px;
+}
+.edittemp_logo{
+    margin-left: 60px;
+    width: 80px;
+}
+.editemp_branches{
+    margin-left: 60px;
+    width: 320px;
+    margin-top: 50px;
+    border-radius: 8px;
+    background-color: rgba(137, 43, 226, 0.457);
+}
+.edittemp_photodhead{
+    margin-left: 160px;
+
+}
+.edittemp_photos{
+    margin-left: 60px;
+    width: 80px;
+}
+.edittemp_Gpay{
+    width:200px;
+    margin-left: 130px;
+    height: 40px;
+}
