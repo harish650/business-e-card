@@ -3,9 +3,10 @@ import './navbar.css'
 // import { useMediaQuery } from 'react-responsive'
 //import { h1} from 'react-router-dom'
 import Login from './login'
+import { useNavigate  as UseNavigate} from 'react-router-dom'
 // import { useNavigate as UseNavigate } from 'react-router-dom'
 export default function navbar() {
-  
+  const navigate=UseNavigate()
   
   return (
       <>
@@ -15,7 +16,7 @@ export default function navbar() {
     <a class="sub-home" href="/home">Home</a>
     <a href="/about" class="expandHome">About</a>
      <div class="subnav">
-     <button class="subnavbtn">Clients<i class="fa fa-caret-down"></i></button>
+     
        <div class="subnav-content">
         <div id="subnav-trapezoid">
           {/* <a href="#Clients">Burger King</a>
@@ -26,7 +27,7 @@ export default function navbar() {
     </div>
   
      <div class="subnav">
-     <button class="subnavbtn">Services<i class="fa fa-caret-down"></i></button>
+     <button class="subnavbtn" onClick={()=>navigate("/admin")}>ADMIN<i class="fa fa-caret-down"></i></button>
        <div class="subnav-content">
         <div class="subnav-trapezoid">
           {/* <a href="#Services">Print Design</a>
@@ -35,7 +36,7 @@ export default function navbar() {
          </div>
        </div>
       </div>
-    <a  class="expandHome">Contact</a>
+    <a href="https://webasetech.in/"  class="expandHome">Webase_domain_website</a>
   </div>
 </nav>
  

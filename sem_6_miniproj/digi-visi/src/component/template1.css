@@ -1,11 +1,11 @@
- .place{
+ .template1_place{
   height:6%;
   width:10%;
   position:absolute;
   top:45px;
 } 
-.lap{
-  position: absolute;
+.template1_lap{
+  /* position: absolute; */
   height:22%;
   width:32%;
   top:220px;
@@ -17,16 +17,16 @@
   padding-top: 2px;
   padding-bottom: 2px; 
 }
-.text{
-  position:absolute;
+.template1_text{
+  /* position:absolute; */
   font-weight:10;
-  font-size:8;
+  font-size:2;
   font-family: 'Times New Roman', Times, serif;
    top: 350px; 
   left: 70px; 
 }
-.add{
-  position: absolute;
+.template1_add{
+  /* position: absolute; */
   font-size: 10px;
   right:20px;
   top:40px; 
@@ -34,18 +34,19 @@
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 100;
 }
- .logo{
+ .template1_logo{
+  /* position:absolute; */
    height: 30%;
   width: 30%; 
   margin-bottom: 50px; 
   padding-right: 500px;
   
 } 
-.bg{
+.template1_bg{
   height: 100%;
   width:100%; 
 }
-.pos{
+.template1_pos{
     position:absolute;
     background-color: rgb(213, 190, 190);
     /* background-image: "url(/backgr.jpg)" ; */
@@ -63,7 +64,7 @@
     border-radius: 9%;
 }
 
-.pos1{
+.template1_pos1{
   position: absolute;
   font-size: 13px;
   font-family:Georgia, 'Times New Roman', Times, serif;
@@ -71,10 +72,10 @@
   right:500px;
   left:30px;
 }
- .phone{
+ .template1_phone{
   height:11%;
   width:9%;
-  margin-top: 245px;
+  margin-top:500px;
   left:40px;
   margin-right: 250px;
   border-radius: 50%;
@@ -86,7 +87,7 @@
   background-color: rgb(120, 3, 3);
  }
 
- .mail{
+ .template1_mail{
   height:19%;
   width:15%;
   margin-top: -60px;
@@ -101,7 +102,7 @@
   border-width: 120px; 
   background-color: rgb(120, 3, 3);
  }
- .wats{
+ .template1_wats{
   height:19%;
   width:13%;
   margin-top: -200px;
@@ -118,7 +119,7 @@
   background-color: rgb(120, 3, 3);
  }
 
-.call{
+.template1_call{
   position: absolute;
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
@@ -127,7 +128,7 @@
   right:500px;
   left:30px;
 }
-.mail1{
+.template1_mail1{
   position: absolute;
   font-size: 10px;
   font-family: Arial, Helvetica, sans-serif;
@@ -137,7 +138,7 @@
   font-weight: 100;
   
 }
-.wats1{
+.template1_wats1{
   position: absolute;
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;font-weight: 100;
@@ -145,14 +146,14 @@
   right:20px;
 }
 
-.fb{
+.template1_fb{
   height: 5%;
   width:9%;
   position:absolute;
   left: 20px;
   bottom:60px;
 }
-.insta{
+.template1_insta{
   height: 5%;
   width:9%;
   position:absolute;
@@ -160,35 +161,35 @@
   bottom:60px;
 }
 
-.twit{
+.template1_twit{
   height: 5%;
   width:10%;
   position:absolute;
   left:150px;
   bottom:60px;
 }
-.linked{
+.template1_linked{
   height: 5%;
   width:9%;
   position:absolute;
   left: 210px;
   bottom:60px;
 }
-.google{
+.template1_google{
   height:5%;
   width:9%;
   position:absolute;
   left: 270px;
   bottom:60px;
 }
-.web{
+.template1_web{
   position:absolute;
   height:5%;
   width:8%;
   bottom: 8px;
   left: 70px;
 }
-.link{
+.template1_link{
   position:absolute;
   text-align: center;
   font-size: 13px;
@@ -197,7 +198,7 @@
   bottom:8px;
   left:120px;
 }
- .office{
+ .template1_office{
   position: absolute;
   flex:1;
   height:30%;
@@ -205,21 +206,21 @@
   left:1px;
   top:120px;
 } 
-.call1{
+.template1_call1{
   position: absolute;
   left:10px;
   top: 470px;
   font-weight: 100;
   font-size: small;
 }
-.wats2{
+.template1_wats2{
   position: absolute;
   right:20px;
   top: 470px;
   font-weight: 100;
   font-size: small;
 }
-.mail2{
+.template1_mail2{
   position:absolute;
   bottom:140px;
   left:150px;

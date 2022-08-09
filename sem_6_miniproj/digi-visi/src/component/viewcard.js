@@ -11,12 +11,16 @@ import temp1 from "../images/temp1.png"
 import temp2 from "../images/temp2.png"
 import Templete from "./dashboard/Template"
 import temp3 from "../images/temp3 (2).png"
+import template1 from "../images/template1.png"
+import template2 from "../images/template2.png"
+import template3 from "../images/template3.png"
+import  tempdemo2 from "../images/tempdemo2.png"
 export default function viewcard() {
 
   
   const navigate=UseNavigate();
   const [id,setid]=UseState("0")
-  const images=[{id:0,"src":temp1,"price":200},{id:1,"src":temp2,"price":500},,{id:2,"src":temp3,"price":500}]
+  const images=[{id:0,"src":temp1,"price":200},{id:1,"src":temp2,"price":500},{id:2,"src":temp3,"price":500},{id:3,"src":template1,"price":500},{id:4,"src":template2,"price":500},{id:5,"src":template3,"price":500},{id:6,"src":tempdemo2,"price":500}]
 
   const ref = UseRef(null);
 
@@ -38,6 +42,22 @@ if(a.id=="0"){
 }
 if(a.id=="2"){
   navigate("/temp")
+}
+if(a.id=="3"){
+  navigate("/template1")
+
+}
+if(a.id=="4"){
+  navigate("/template2")
+  
+}
+if(a.id=="5"){
+  navigate("/template3")
+  
+}
+if(a.id=="6"){
+  navigate("/tempdemo2")
+  
 }
 }
   return (

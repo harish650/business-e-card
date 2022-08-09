@@ -1,10 +1,54 @@
-.back{
-    height: 100%;
-    width:100%
-}
-.regform{
-    background-color: rgb(129, 129, 139);
+
+
+ .regform{
+    background-color: rgb(62, 62, 175);
     opacity: 60%;
     
     
+} 
+ .register_form{
+    height: 520px;
+    width: 350px;
+    background-color: rgba(139, 57, 232, 0.326);
+    position: relative;
+    transform: translate(-50%,-50%);
+    top: 400px;
+    left: 51%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
 }
+.register_form{
+    font-family: 'Poppins',sans-serif;
+    color: black;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+} 
+.register_form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 5px;
+    margin-right: 780px;
+} 
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(2, 2, 10, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+} 

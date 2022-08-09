@@ -1,8 +1,7 @@
 import React from 'react'
 import {Formik} from "formik"
 import { useNavigate as UseNavigate } from 'react-router-dom';
- import './register.css'
-import reg from '../images/reg.jpeg'
+import './register.css'
 export default function Register() {
   const navigate=UseNavigate();
   const handle=()=>{
@@ -10,9 +9,9 @@ export default function Register() {
   }
   return (
     <div >
-      <img className='back' src={reg}/>
+        <div className="register_form">
       
-         <Formik className='regform'
+         <Formik 
        initialValues={{ firstname:'',lastname:'',username: '',emailid:'',phoneno:'', password: '' ,repassword:''}}
       
 
@@ -20,10 +19,49 @@ export default function Register() {
 
 
        onSubmit={(values) => {
-         
+
+        if(!values.firstname){
+ alert(" firstname Required");
+        }
+        else if(!values.lastname){
+          alert(" lastname Required");
+
+        }
+        else if(!values.emailid)
+        {
+ alert(" emailid Required");
+          
+        }
+        else if(!values.username)
+        {
+          alert( " username Required");
+
+        }
+
+        else if(!values.phoneno)
+        {
+          
+ alert(" phoneno Required");
+}
+        else if(!values.password)
+        {
+ alert(" password Required");
+          
+        } else if(!values.repassword)
+        {
+ alert(" repassword Required");
+          
+        }
+        else if(values.password!==values.repassword)
+        {
+ alert(" Repassword is not match");
+          
+        }
+         else{
         fetch("/register",{method:"POST",
         headers:{"Content-Type":"application/json"},
         body:JSON.stringify(values)}).then(res=>handle())
+      }
         
        }}
      >
@@ -37,8 +75,7 @@ export default function Register() {
          isSubmitting,
          /* and other goodies */
        }) => (
-         <form onSubmit={handleSubmit}>
-             <div className='log_in'>
+         <form onSubmit={handleSubmit} >
            <input
              type="text"
              name="firstname"
@@ -105,10 +142,11 @@ export default function Register() {
              Submit
            </button>
 
-           </div>
          </form>
        )}
      </Formik> 
+
+         </div>
      </div>
   )
 }

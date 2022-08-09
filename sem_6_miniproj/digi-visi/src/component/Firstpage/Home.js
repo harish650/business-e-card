@@ -2,9 +2,14 @@ import React from 'react'
 import { MdRoom,MdCall,MdOutlineLanguage,MdOutlineEmail} from "react-icons/md";
 import { ImWhatsapp } from "react-icons/im";
 import{TiSocialTwitter}  from "react-icons/ti";
-import { useNavigate } from 'react-router-dom'
+import { Navigate, useNavigate as UseNavigate } from 'react-router-dom'
 import './Home.css'
+
 export const Home = () => {
+  const navigate=UseNavigate();
+  const han=()=>{
+    navigate("/login")
+  }
   return( 
          <>
          <div className='back'>
@@ -13,7 +18,7 @@ export const Home = () => {
          <p className='sub-head'> Digital Visting Card <br></br> For Digital INDIA</p>
          <p className='sub-head1'>Create an impression to your clients with your digital Visting card</p>
          <div className='btnn'>
-           <button type='submit'>CREATE VCARD</button>
+           <button onClick={()=>han()}>CREATE VCARD</button>
          </div>
         
            <div className='image'>

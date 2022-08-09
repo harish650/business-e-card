@@ -1,4 +1,4 @@
-.pos{
+.templata2_pos{
     position: absolute;
     
     background-color: rgb(232, 244, 244);
@@ -19,14 +19,14 @@
     to{transform: rotate(360deg);}
 } */ 
 
-.img{
+.templata2_img{
     position:absolute;
     height: 50%;
     width:100%;
     left:1px;
     top: 295px;
 }
-.logo{
+.templata2_logo{
     position:absolute;
     margin-left: 15px;    
     height:10%;
@@ -40,14 +40,14 @@
     padding-top: 3px;
     padding-bottom: 3px; */
 }
-.logo2{
+.templata2_logo2{
      position:absolute;
      left:1px;
      height: 20%;
      width:100%;
      
 }
-.call{
+.templata2_call{
     position: absolute;
     height: 7%;
     width:10%;
@@ -60,7 +60,7 @@
     border-radius: 45%;
     background-color: black;
 }
-.mail{
+.templata2_mail{
     position: absolute;
     height: 7.5%;
     width:10%;
@@ -73,7 +73,7 @@
         border-radius: 40%;
     background-color: black;  
 }
-.loc{
+.templata2_loc{
     position: absolute;
     height: 7%;
     width:10%;
@@ -86,7 +86,7 @@
     border-radius: 45%;
     background-color: black;   
 }
-.net{
+.templata2_net{
     position:absolute;
     height:7%;
     width: 10%;
@@ -99,7 +99,7 @@
     border-radius: 40%;
     background-color: black;   
 }
-.wats{
+.templata2_wats{
     position:absolute;
     height:7%;
     width: 10%;
@@ -112,38 +112,38 @@
     border-radius: 36%;
     background-color: black;  
 }
-.text1{
+.templata2_text1{
     top:110px;
     position: absolute;
     left:70px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
 }
-.text2{
+.templata2_text2{
     top:175px;
     position: absolute;
     left:70px;font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: 100;
 }
-.text3{
+.templata2_text3{
     top: 230px;
     position: absolute;
     left: 70px;font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: 100;
 }
-.text4{
+.templata2_text4{
     top: 310px;
     position:absolute;
     right: 80px;font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: 100;
 }
-.text5{
+.templata2_text5{
     top: 380px;
     position: absolute;
     right: 80px;font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
 }
-.insta{
+.templata2_insta{
     position: absolute;
     height:7%;
     width: 10%;
@@ -156,14 +156,14 @@
     border-radius: 40%;
     background-color: black;  
 }
-.text6{
+.templata2_text6{
     top:450px;
     position: absolute;
     right: 80px;font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: 100;
 }
 
-.p2{
+.templata2_p2{
     position:absolute;
     height:20%;
     width:30%;

@@ -12,6 +12,9 @@ import { useNavigate as  UseNavigate } from 'react-router-dom';
 export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
   const navigate=UseNavigate()
+  const editpage=()=>{
+    fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/edittemplate",{state:{h1:res[0]},})})
+  }
   return (<>
   
     <Box sx={{ }}>
@@ -33,7 +36,7 @@ export default function SimpleBottomNavigation() {
         <h6 style={{marginleft:"20px"}}>Create card</h6>
         </div>
 
-       <div className='bottom-card'> <BottomNavigationAction  icon={<img  style={{height:"33px",width:"33px",}}src={edit}/>} />
+       <div className='bottom-card'> <BottomNavigationAction  icon={<img onClick={()=>editpage()} style={{height:"33px",width:"33px",}}src={edit}/>} />
         <h6>Editing</h6></div>
 
         <div className='bottom-card'> <BottomNavigationAction onClick={()=>navigate("/viewcard")} icon={<img  style={{height:"33px",width:"33px"}}src={file}/>} />

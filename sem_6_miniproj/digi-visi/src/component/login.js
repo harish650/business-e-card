@@ -65,7 +65,8 @@ const nav=(a)=>{
        }) => (
        
        
-         <form onSubmit={handleSubmit}>
+         <form onSubmit={handleSubmit}
+         className="login_form">
              <div className='head'>
                <h3>Login</h3>
              </div>
@@ -87,6 +88,7 @@ const nav=(a)=>{
              onBlur={handleBlur}
              value={values.password}
            />
+           <label style={{color:"red",marginTop:"-4px",marginLeft:"140px"}}>forgot password</label>
            </div>
            {/* {errors.password && touched.password && errors.password} */}
           
@@ -106,8 +108,8 @@ const nav=(a)=>{
 
 <img onClick={handle} style={{height:"40px",width:"40px",borderRadius:"10px"}}src={signin}/>
 
-<img onClick={handle}style={{height:"40px",width:"40px"}} src={google}/>
-<img onClick={handle}style={{height:"40px",width:"40px"}} src={linkedin}/>
+{/* <img onClick={handle}style={{height:"40px",width:"40px"}} src={google}/>
+<img onClick={handle}style={{height:"40px",width:"40px"}} src={linkedin}/> */}
 
 
 
