@@ -163,9 +163,7 @@ const adddd=(a)=>{
 
             // fetch("/template_details",{method:"POST",
             // headers:{"Content-Type":"application/json"},
-            // body:JSON.stringify(values)}).then(res=>navigate("/tempdemodemo",{
-            //   state:{h1:res.json()},}))
-            // console.log("ok")
+            // body:JSON.stringify(values)})
 
             // fetch("/get_selected_id")
             // fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/tempdemodemo",{state:{h1:res[0]},});console.log(res[0])})
@@ -176,19 +174,22 @@ else if(res.val===2){
   fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/temp",{state:{h1:res[0]},});console.log(res[0])})
 }
 else if(res.val===3){
-  fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/template1",{state:{h1:res[0]},});console.log(res[0])})
+  fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/template1_demo",{state:{h1:res[0]},});console.log(res[0])})
 }
 else if(res.val===4){
-  fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/template2",{state:{h1:res[0]},});console.log(res[0])})
+  fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/template2_demo",{state:{h1:res[0]},});console.log(res[0])})
 }
 else if(res.val===5){
-  fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/template2",{state:{h1:res[0]},});console.log(res[0])})
+  fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/template3_demo",{state:{h1:res[0]},});console.log(res[0])})
 }
 else if(res.val===6){
-  fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/tempdemo2",{state:{h1:res[0]},});console.log(res[0])})
+  fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/tempdemo2_demo",{state:{h1:res[0]},});console.log(res[0])})
 }
 else if(res.val===1){
-  fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/tempdemodemo",{state:{h1:res[0]},});console.log(res[0])})
+  fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/template4_demo",{state:{h1:res[0]},});console.log(res[0])})
+}
+else if(res.val===7){
+  fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/template5_demo",{state:{h1:res[0]},});console.log(res[0])})
 }
 })
 

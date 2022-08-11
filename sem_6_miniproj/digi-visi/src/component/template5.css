@@ -1,52 +1,62 @@
 .template5_pos{
-    position: absolute;
-    background-color: rgb(232, 244, 244);
-    top:0;
-    bottom: 0;
-    left:0;
-    right:0;
-    margin-left: 570px;
-    margin-right: 600px;
-    margin-top: 80px;
-    margin-bottom:40px;
-    padding-left: 200px;
+    background-color: rgb(230, 222, 219);
+  /* background-image: "url(/backgr.jpg)" ; */
+  top:0; 
+  left:0;
+  right:0;
+  bottom:0;
+  margin-left: 500px;
+  margin-right: 700px; 
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 10px;
+  text-align: center;
+  padding-top: 590px;
+  padding-left: 350px;
+  border-radius: 5%;
 }
 .vl{
     position: absolute;
-    margin-top: 280px;
+    margin-top: 330px;
     height:190px;
    border-left: 2px solid rgb(14, 15, 14);
    left:50%;
-   margin-left: -2%;
+   margin-left: -6%;
    top:0
    
 }
 .template5_loc{
+    position:absolute;
     height:30px;
     width:30px;
-    margin-left: -120px;
-    margin-top: -200px;
+    margin-left: -270px;
+    margin-top: -290px;
 }
 .template5_phone{
+    position: absolute;
     height:30px;
     width:30px;
-    margin-left: 130px;
-    margin-top: -200px;
+    margin-left: -100px;
+    margin-top: -290px;
 }
 .template5_mail{
     height:30px;
     width:30px;
-    margin-left: -190px;
+    position: absolute;
+    margin-left: -270px;
+    margin-Top:-190px
 }
 .template5_net{
+    position: absolute;
+
     height:30px;
     width:30px;   
-    margin-left: 130px;
+    margin-left: -100px;margin-Top:-185px
 }
 .template5_women{
- position:absolute;  
+  
     height:250px;
-    width:366px;
-    margin-top: -408px;
-    margin-left: -270px;
+    width:350px;
+    margin-top: -948px;
+    margin-left: -350px;
 }

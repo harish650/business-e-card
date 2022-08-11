@@ -11,6 +11,13 @@ const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
 
 export default class Example extends PureComponent {
   static demoUrl = 'https://codesandbox.io/s/pie-chart-with-padding-angle-7ux0o';
+state={
+  data:""
+}
+   gettotal(){
+    fetch("/get_pyment_details",{method:"GET"}).then(res=>console.log(res))
+    console.log("uvg",this.state.data)
+  }
 
   render() {
     return (
@@ -47,7 +54,8 @@ export default class Example extends PureComponent {
           ))}
         </Pie>
       </PieChart>
-<label style={{marginTop:"-70px",marginLeft:"200px",fontSize:"20px"}}>Amount received</label>
+<label style={{marginTop:"-70px",marginLeft:"200px",fontSize:"20px"}}>
+  Amount received</label>
 </>
 
     );

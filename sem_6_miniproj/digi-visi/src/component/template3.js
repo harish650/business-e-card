@@ -1,25 +1,20 @@
 import React from 'react'
 import red from "../images/red.png"
 import loc from "../images/place.png"
-import call2 from "../images/call2.png"
-import mail2 from "../images/mail2.png"
+import call2 from "../images/phone5.png"
+import mail2 from "../images/mail5.png"
 import wats2 from "../images/wats2.png"
 import net from "../images/internet1.png"
-import { useNavigate as UseNavigate } from 'react-router-dom'
-
 // import redpic from "../images/redpic.png"
 import "./template3.css"
  function template3() {
-  const navigate=UseNavigate()
-
   return (
     <> 
     <div> 
       <div>
         <img className='red' src={red}></img>
         <div className='front'>
-        {/* <img className='call2' src={call2}></img> */}
-        <img src={call2}/>
+         <img className='call2' src={call2}></img> 
         <h1 className='t1'>+91984054454</h1>
         <img className='loc' src={wats2}></img>
         <div className='t3'>26,Marappan Street - 2, Surampatti</div>
@@ -40,8 +35,7 @@ import "./template3.css"
         
         
 
-    </div>
-    <button style={{position:"fixed",right:"200px",bottom:"200px",height:"60px",width:"200px",borderRadius:"20px",fontSize:"28px",color:"white",backgroundColor:"blue"}}onClick={()=>navigate("/payment")}>payment</button></>
+    </div></>
   )
 }
 export default template3

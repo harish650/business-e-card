@@ -5,6 +5,7 @@ const mongoose=require("mongoose")
 const Register=require("./models/Register")
 const bodyParser=require("body-parser")
 const Template_details=require("./models/Template_details")
+const Payment_logs=require("./models/Payment_logs")
 const  Admin_add_temp =require("./models/Admin_add_temp")
 const Pricing =require('./models/pricing')
 const multer  = require('multer')
@@ -201,7 +202,10 @@ app.get("/adminpage_users",async(req,res)=>{
  console.log(reg);
 })
 app.get("/template_details_get",async(req,res)=>{
-    const det=await Template_details.find({loginusername:"harishkp"});
+    const det=await Template_details.find({loginusername:"bharani"});
+    console.log(loguser);
+
+    // const det=await Template_details.find();
     res.send(det);
 })
 app.post("/image_sample",(req,res)=>{
@@ -304,5 +308,21 @@ app.post("/admin_add_template",async(req,res)=>{
 app.get("/fetch_admin_add_temp",async(req,res)=>{
     const valllue=await Admin_add_temp.find({});
     res.json({"vv":valllue})
+})
+app.post("/payment_details",async(req,res)=>{
+    console.log(req.body.price)
+    const ddata=new Payment_logs({
+        username:"harish",
+        price:req.body.price
+    });ddata.save().then(res=>console.log(res))
+})
+app.get("/get_pyment_details",async(req,res)=>{
+    const pay_data=await Payment_logs.find();
+    var total=0;
+    for(let id in pay_data){
+        total=parseInt(total)+parseInt(pay_data[id].price);
+    }
+    const dd=total.toString();
+    res.json({"pay":dd})
 })
 app.listen(4000);

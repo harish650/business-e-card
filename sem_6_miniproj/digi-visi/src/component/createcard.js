@@ -2,18 +2,20 @@ import React from 'react'
 // import { Navigate } from 'react-router-dom'
 import { useNavigate, useNavigate as UseNavigate } from 'react-router-dom'
 import temp1 from "../images/temp1.png"
-import temp2 from "../images/temp2.png"
+import temp2 from "../images/temp44.png"
 import Templete from "./dashboard/Template"
 import temp3 from "../images/temp3 (2).png"
 import template1 from "../images/template1.png"
 import template2 from "../images/template2.png"
-import template3 from "../images/template3.png"
+import template3 from "../images/temp33.png"
+
 import  tempdemo2 from "../images/tempdemo2.png"
+import temp55 from "../images/temp55.png"
 
 export default function createcard() {
   const navigate=UseNavigate();
 
-  const images=[{id:0,"src":temp1,"price":200,de:[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22]},{id:1,"src":temp2,"price":500},{id:2,"src":temp3,"price":500},{id:3,"src":template1,"price":500},{id:4,"src":template2,"price":500},{id:5,"src":template3,"price":500},{id:6,"src":tempdemo2,"price":500}]
+  const images=[{id:0,"src":temp1,"price":200},{id:1,"src":temp2,"price":500},{id:2,"src":temp3,"price":500},{id:3,"src":template1,"price":500},{id:4,"src":template2,"price":500},{id:5,"src":template3,"price":500},{id:6,"src":tempdemo2,"price":500},{id:7,"src":temp55,"price":500}]
 const funct=(a)=>{
      fetch("/selected_template",{method:"POST",
      headers:{"Content-Type":"application/json"},

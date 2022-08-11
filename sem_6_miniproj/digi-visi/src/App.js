@@ -28,6 +28,13 @@ import Template2 from "./component/template2.js"
 import Template4 from "./component/template4"
 import Template5 from "./component/template5"
 import Gpay from "./component/gpay"
+import Tempdemo2_demo from "./component/tempdemo2_demo"
+
+import Template1_demo from "./component/template1_demo"
+import Template2_demo from "./component/template2_demo"
+import Template3_demo from "./component/template3_demo"
+import Template4_demo from "./component/template4_demo"
+import Template5_demo from "./component/template5_demo"
 // import { initializeApp } from "firebase/app";
 // import { getAnalytics } from "firebase/analytics";
 // import Mainpage from './component/mainpage';
@@ -60,6 +67,13 @@ function App () {
   <Route path="/template1" element={<Template1 />}></Route>
   
   <Route path="/template3" element={<Template3 />}></Route>
+
+
+  
+
+
+
+  
   <Route path="/template_details_form" element={<Template_details_form />}></Route>
   <Route path="/tempdemodemo" element={<Tempdemodemo />}></Route>
   <Route path="/payment" element={<Payment />}></Route>
@@ -71,6 +85,14 @@ function App () {
    <Route path="/edittemplate" element={<Editemplate />}></Route>
    <Route path="/tempdemodemo1" element={<Tempdemodemo1 />}></Route>
   <Route path="/gpay" element={<Gpay />}></Route>
+  <Route path="/tempdemo2_demo" element={<Tempdemo2_demo />}></Route>
+
+
+  <Route path="/template1_demo" element={<Template1_demo />}></Route>
+  <Route path="/template2_demo" element={<Template2_demo />}></Route>
+  <Route path="/template3_demo" element={<Template3_demo />}></Route>
+  <Route path="/template4_demo" element={<Template4_demo />}></Route>
+  <Route path="/template5_demo" element={<Template5_demo />}></Route>
 
    </Routes> 
    </BrowserRouter>

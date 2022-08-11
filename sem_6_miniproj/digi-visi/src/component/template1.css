@@ -1,230 +1,93 @@
- .template1_place{
-  height:6%;
-  width:10%;
-  position:absolute;
-  top:45px;
-} 
-.template1_lap{
-  /* position: absolute; */
-  height:22%;
-  width:32%;
-  top:220px;
-  right: 115px; 
-  border-radius: 50%;
-  background-color: rgb(230, 223, 223);
-   padding-left: 2px;
-  padding-right: 2px;
-  padding-top: 2px;
-  padding-bottom: 2px; 
-}
-.template1_text{
-  /* position:absolute; */
-  font-weight:10;
-  font-size:2;
-  font-family: 'Times New Roman', Times, serif;
-   top: 350px; 
-  left: 70px; 
-}
-.template1_add{
-  /* position: absolute; */
-  font-size: 10px;
-  right:20px;
-  top:40px; 
-  left:200px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 100;
-}
- .template1_logo{
-  /* position:absolute; */
-   height: 30%;
-  width: 30%; 
-  margin-bottom: 50px; 
-  padding-right: 500px;
-  
-} 
-.template1_bg{
-  height: 100%;
-  width:100%; 
-}
 .template1_pos{
-    position:absolute;
-    background-color: rgb(213, 190, 190);
-    /* background-image: "url(/backgr.jpg)" ; */
-    top:0; 
-    left:0;
-    right:0;
-    bottom:0;
-    margin-left: 500px;
-    margin-right: 700px; 
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 10px;
-    text-align: center;
-    padding-top: 10px;
-    border-radius: 9%;
+  background-color: rgb(230, 222, 219);
+  /* background-image: "url(/backgr.jpg)" ; */
+  top:0; 
+  left:0;
+  right:0;
+  bottom:0;
+  margin-left: 500px;
+  margin-right: 700px; 
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 10px;
+  text-align: center;
+  padding-top: 590px;
+  padding-left: 350px;
+  border-radius: 9%;
+  
 }
-
+.template1_logo{
+  position: absolute; 
+  height:100px;
+  width:100px; 
+  margin-left:-350px;
+  top:50px;
+}
 .template1_pos1{
-  position: absolute;
   font-size: 13px;
   font-family:Georgia, 'Times New Roman', Times, serif;
   top:80px;
   right:500px;
   left:30px;
 }
- .template1_phone{
-  height:11%;
-  width:9%;
-  margin-top:500px;
-  left:40px;
-  margin-right: 250px;
-  border-radius: 50%;
-  padding-top: 1%;
-  padding-bottom:3%;
-  padding-left: 3%;
-  padding-right: 3%;
-  border-width: 120px; 
-  background-color: rgb(120, 3, 3);
- }
-
- .template1_mail{
-  height:19%;
-  width:15%;
-  margin-top: -60px;
-  margin-right: 10px;
-  margin-bottom: 70px;
-  border-radius: 48%;
-  padding-top: 3%;
-  padding-bottom:3%;
-  padding-left: 1%;
-  padding-right: 1%;
-  justify-content: space-between;
-  border-width: 120px; 
-  background-color: rgb(120, 3, 3);
- }
- .template1_wats{
-  height:19%;
-  width:13%;
-  margin-top: -200px;
-  
-  margin-left: 240px; 
-  margin-bottom: 82px;
-  border-radius: 48%;
-  padding-top: 2%;
-  padding-bottom:2%;
-  padding-left: 2%;
-  padding-right: 2%;
-  justify-content: space-between;
-  border-width: 120px; 
-  background-color: rgb(120, 3, 3);
- }
-
-.template1_call{
+.template1_place{
+  height:30px;
+  width:30px;
+  position:absolute; 
+  top:83px;
+  margin-left:-180px;
+}
+.template1_add{
   position: absolute;
+  font-size: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 100;
+  margin-left:-140px;
+  margin-top: -555px;
+}.template1_add1{
+  position: absolute;
+  font-size: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 100;
+  margin-left:-140px;
+  margin-top: -540px;
+}
+.template1_office{
+  position: absolute;
+height:200px;
+width:350px;
+margin-left:-350px;
+margin-top: -500px;
+}
+.template1_lap{
+  position: absolute;
+  height:120px;
+  width:110px;
+  margin-left:-230px;
+margin-top: -380px;
+border-radius: 50%;
+background-color: rgb(197, 194, 191);
+}
+.template1_text{
+  position: absolute;
+  font-size: small;
+  font-weight: 200;
+  margin-left:-240px;
+  margin-top: -260px;
+}
+/* .template1_phone1{ */
+  /* position:absolute;
+  height:50px;
+  width:50px;
+  margin-left:-300px;
+} */
+
+.template_call{
+  /* position: absolute; */
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
   top:460px;
   right:500px;
   left:30px;
-}
-.template1_mail1{
-  position: absolute;
-  font-size: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
-  top:475px;
-  right:112px;
-  font-weight: 100;
-  
-}
-.template1_wats1{
-  position: absolute;
-  font-size: 13px;
-  font-family: Arial, Helvetica, sans-serif;font-weight: 100;
-  top:460px;
-  right:20px;
-}
-
-.template1_fb{
-  height: 5%;
-  width:9%;
-  position:absolute;
-  left: 20px;
-  bottom:60px;
-}
-.template1_insta{
-  height: 5%;
-  width:9%;
-  position:absolute;
-  left:80px;
-  bottom:60px;
-}
-
-.template1_twit{
-  height: 5%;
-  width:10%;
-  position:absolute;
-  left:150px;
-  bottom:60px;
-}
-.template1_linked{
-  height: 5%;
-  width:9%;
-  position:absolute;
-  left: 210px;
-  bottom:60px;
-}
-.template1_google{
-  height:5%;
-  width:9%;
-  position:absolute;
-  left: 270px;
-  bottom:60px;
-}
-.template1_web{
-  position:absolute;
-  height:5%;
-  width:8%;
-  bottom: 8px;
-  left: 70px;
-}
-.template1_link{
-  position:absolute;
-  text-align: center;
-  font-size: 13px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 100;
-  bottom:8px;
-  left:120px;
-}
- .template1_office{
-  position: absolute;
-  flex:1;
-  height:30%;
-  width:100%;
-  left:1px;
-  top:120px;
-} 
-.template1_call1{
-  position: absolute;
-  left:10px;
-  top: 470px;
-  font-weight: 100;
-  font-size: small;
-}
-.template1_wats2{
-  position: absolute;
-  right:20px;
-  top: 470px;
-  font-weight: 100;
-  font-size: small;
-}
-.template1_mail2{
-  position:absolute;
-  bottom:140px;
-  left:150px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
-  font-weight: 100;
 }

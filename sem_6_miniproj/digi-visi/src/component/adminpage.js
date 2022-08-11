@@ -4,16 +4,16 @@ import Adminpage1 from "./adminpage1"
 import Adminpage_sidebar from "./adminpage_sidebar.js"
 import axios from "axios"
 import temp1 from "../images/temp1.png"
-import temp2 from "../images/temp2.png"
+import temp2 from "../images/temp44.png"
 import Templete from "./dashboard/Template"
 import temp3 from "../images/temp3 (2).png"
 import template1 from "../images/template1.png"
 import template2 from "../images/template2.png"
-import template3 from "../images/template3.png"
+import template3 from "../images/temp33.png"
 import  tempdemo2 from "../images/tempdemo2.png"
 import { FileUploader } from "react-drag-drop-files";
 
-
+import temp55 from "../images/temp55.png"
 import { useLocation as UseLocation } from 'react-router-dom'
 
 
@@ -21,6 +21,10 @@ import { useLocation as UseLocation } from 'react-router-dom'
 
 export default function adminpage(props) {
   const [filecompany, setFilecompany] = UseState(null);
+const [vall,setval]=UseState('56');
+  const getpay=()=>{
+    fetch("/get_pyment_details",{method:"GET"}).then(res=>res.json()).then(res=>setval(res.pay))
+  }
   const handleChangecompany = (file) => {
     setFilecompany(file.target.files[0]);
     // console.log(filecompany)
@@ -45,7 +49,7 @@ file_catalogue.mv(`${__dirname}/${file_catalogue.name}`,err=>{console.log(err)})
  const [data_reg,setdaat]=UseState("")
  const location=UseLocation();
 
- const images=[{id:0,"src":temp1,"price":200},{id:1,"src":temp2,"price":500},{id:2,"src":temp3,"price":500},{id:3,"src":template1,"price":500},{id:4,"src":template2,"price":500},{id:5,"src":template3,"price":500},{id:6,"src":tempdemo2,"price":500}]
+ const images=[{id:0,"src":temp1,"price":200},{id:1,"src":temp2,"price":500},{id:2,"src":temp3,"price":500},{id:3,"src":template1,"price":500},{id:4,"src":template2,"price":500},{id:5,"src":template3,"price":500},{id:6,"src":tempdemo2,"price":500},{id:7,"src":temp55,"price":500}]
 
 
  const [imagess,setimagess]=UseState([{id:0,"src":temp1,"price":5000,"dis":"50%"},{id:1,"src":temp2,"price":2000,"dis":"60%"},{id:2,"src":temp3,"price":500,"dis":"70%"},{id:3,"src":template1,"price":4000,"dis":"10%"},{id:4,"src":template2,"price":6000,"dis":"30%"},{id:5,"src":template3,"price":1500,"dis":"90%"},{id:6,"src":tempdemo2,"price":1200,"dis":"30%"}])
@@ -93,7 +97,12 @@ const loaddata=()=>{
         <div style={{display:"flex"}}>
         <div id="1">
            <Adminpage1/>
-        </div></div>
+        </div>
+        
+        </div>
+        <div style={{display:"flex",position:"fixed",right:"300px"}}>
+        <button  onClick={()=>getpay()}>refresh</button><h1>{vall}</h1>
+</div>
 
         <div style={{borderRadius:"20px",height:"500px",width:"800px",marginLeft:"30px",marginTop:"50px",backgroundColor:"white",boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",overflow:"auto"}}>
           <button onClick={()=>loaddata()}>refresh</button>
@@ -131,7 +140,7 @@ const loaddata=()=>{
        <button onClick={()=>upload()}>upload</button></div>
           </div>
           </div>
-          <div style={{height:"400px",width:"1300px",display:"flex",marginTop:"120px",position:"relative",overflowY:"auto",marginLeft:"75px"}}>{imagess.map((id,index)=>
+          <div style={{height:"400px",width:"1300px",display:"flex",marginTop:"120px",position:"relative",overflowY:"auto",marginLeft:"75px"}}>{images.map((id,index)=>
         <div >
         
         <label style={{borderRadius:"9px",backgroundColor:"rgb(223,230,107)",height:"20px",width:"40px",position:"absolute",marginLeft:"280px",paddingTop:"10px",marginTop:"-20px",paddingLeft:"37px",fontSize:"30px",color:"red"}}>{location.state.h1[id.id].dis}</label>

@@ -22,6 +22,35 @@ export default function SimpleBottomNavigation() {
       ,{state:{h1:res.val},})
     })
   }
+
+const database1=()=>{
+  fetch("/get_selected_id",{method:"GET"}).then(res=>res.json()).then(res=>{if(res.val===0){
+    fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/tempdemodemo",{state:{h1:res[0]},});console.log(res[0])})
+ }
+ else if(res.val===2){
+   fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/temp",{state:{h1:res[0]},});console.log(res[0])})
+ }
+ else if(res.val===3){
+   fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/template1_demo",{state:{h1:res[0]},});console.log(res[0])})
+ }
+ else if(res.val===4){
+   fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/template2_demo",{state:{h1:res[0]},});console.log(res[0])})
+ }
+ else if(res.val===5){
+   fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/template3_demo",{state:{h1:res[0]},});console.log(res[0])})
+ }
+ else if(res.val===6){
+   fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/tempdemo2_demo",{state:{h1:res[0]},});console.log(res[0])})
+ }
+ else if(res.val===1){
+   fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/template4_demo",{state:{h1:res[0]},});console.log(res[0])})
+ }
+ else if(res.val===7){
+   fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/template5_demo",{state:{h1:res[0]},});console.log(res[0])})
+ }
+ })
+}
+
   return (<>
   
     <Box sx={{ }}>
@@ -49,7 +78,7 @@ export default function SimpleBottomNavigation() {
         <div className='bottom-card'> <BottomNavigationAction onClick={()=>navigate("/viewcard")} icon={<img  style={{height:"33px",width:"33px"}}src={file}/>} />
         <h6>View Cards</h6></div>
 
-        <div className='bottom-card'> <BottomNavigationAction  icon={<img  style={{height:"33px",width:"33px"}}src={database}/>} />
+        <div className='bottom-card'> <BottomNavigationAction  onClick={()=>database1()}  icon={<img  style={{height:"33px",width:"33px"}}src={database}/>} />
         <h6>Database</h6></div>
 
         <div className='bottom-card'> <BottomNavigationAction onClick={()=>pricing()} icon={<img  style={{height:"33px",width:"33px"}}src={price}/>} />

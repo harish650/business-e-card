@@ -1,15 +1,16 @@
 import React from 'react'
 import temp1 from "../images/temp1.png"
-import temp2 from "../images/temp2.png"
+import temp2 from "../images/temp44.png"
 import Templete from "./dashboard/Template"
 import temp3 from "../images/temp3 (2).png"
 import template1 from "../images/template1.png"
 import template2 from "../images/template2.png"
-import template3 from "../images/template3.png"
+import template3 from "../images/temp33.png"
 import  tempdemo2 from "../images/tempdemo2.png"
 import {useLocation as UseLocation} from "react-router-dom"
+import temp55 from "../images/temp55.png"
 export default function pricing(props) {
-  const images=[{id:0,"src":temp1,"price":5000,"dis":"50%"},{id:1,"src":temp2,"price":2000,"dis":"60%"},{id:2,"src":temp3,"price":500,"dis":"70%"},{id:3,"src":template1,"price":4000,"dis":"10%"},{id:4,"src":template2,"price":6000,"dis":"30%"},{id:5,"src":template3,"price":1500,"dis":"90%"},{id:6,"src":tempdemo2,"price":1200,"dis":"30%"}]
+  const images=[{id:0,"src":temp1,"price":200},{id:1,"src":temp2,"price":500},{id:2,"src":temp3,"price":500},{id:3,"src":template1,"price":500},{id:4,"src":template2,"price":500},{id:5,"src":template3,"price":500},{id:6,"src":tempdemo2,"price":500},{id:7,"src":temp55,"price":500}]
 
 
   const location=UseLocation();
