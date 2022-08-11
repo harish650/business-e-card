@@ -5,6 +5,8 @@ const mongoose=require("mongoose")
 const Register=require("./models/Register")
 const bodyParser=require("body-parser")
 const Template_details=require("./models/Template_details")
+const  Admin_add_temp =require("./models/Admin_add_temp")
+const Pricing =require('./models/pricing')
 const multer  = require('multer')
 const upload = multer({ dest: 'uploads/' })
 const fileupload=require("express-fileupload")
@@ -19,7 +21,7 @@ var file_companu_logo=null;
 var file_product=null;
 var file_product_obj=[];
 var file_catalogue=null;
-
+var pricing_details=null;
 var selected_template=null;
 let loguser='';
 var textt='';
@@ -242,7 +244,7 @@ app.post("/selected_template",(req,res)=>{
 })
 app.post("/edittemp",async(req,res)=>{
     values=req.body.values
-     const reg=await Template_details.updateOne({loginusername:"harishkp"},{$set:{
+     const reg=await Template_details.updateOne({loginusername:loguser},{$set:{
         Contactno: req.body.Contactno,
         Firstname: req.body.Firstname, Lastname:req.body.Lastname, 
         Email: req.body.Email,
@@ -267,8 +269,40 @@ app.post("/edittemp",async(req,res)=>{
                catalogue:file_catalogue,
                selectes_template:selected_template,
                template_code:''}});
-               const det=await Template_details.find({loginusername:"harishkp"});
+               const det=await Template_details.find({loginusername:loguser});
     res.send(det);
     
+})
+
+app.get("/get_selected_id",(req,res)=>{
+    res.json({"val":selected_template})
+})
+app.get("/pricing_details",async(req,res)=>{
+    // const temp=new Pricing({
+    //     id:"6",
+    //     price:"3200",
+    //     dis:"30%"
+    // }); temp.save().then(re=>res.send(re));
+    
+    pricing_details=await Pricing.find();
+    res.json({"val":pricing_details})
+})
+app.post("/update_pricing_details",async(req,res)=>{
+     const reg=await Pricing.updateOne({"_id":req.body.id},{$set:{"price":req.body.price,"dis":req.body.dis}});
+//     console.log(req.body)
+// console.log("id",req.body.id);
+// console.log("amount",req.body.price);
+// console.log("dis",req.body.dis);
+
+})
+app.post("/admin_add_template",async(req,res)=>{
+    console.log(req.files.file);
+    const  sav=await Admin_add_temp({
+        addedfile:req.files.file
+    });sav.save().then(re=>res.send(re));
+})
+app.get("/fetch_admin_add_temp",async(req,res)=>{
+    const valllue=await Admin_add_temp.find({});
+    res.json({"vv":valllue})
 })
 app.listen(4000);

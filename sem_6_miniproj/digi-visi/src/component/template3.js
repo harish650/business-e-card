@@ -5,9 +5,13 @@ import call2 from "../images/call2.png"
 import mail2 from "../images/mail2.png"
 import wats2 from "../images/wats2.png"
 import net from "../images/internet1.png"
+import { useNavigate as UseNavigate } from 'react-router-dom'
+
 // import redpic from "../images/redpic.png"
 import "./template3.css"
  function template3() {
+  const navigate=UseNavigate()
+
   return (
     <> 
     <div> 
@@ -36,7 +40,8 @@ import "./template3.css"
         
         
 
-    </div></>
+    </div>
+    <button style={{position:"fixed",right:"200px",bottom:"200px",height:"60px",width:"200px",borderRadius:"20px",fontSize:"28px",color:"white",backgroundColor:"blue"}}onClick={()=>navigate("/payment")}>payment</button></>
   )
 }
 export default template3

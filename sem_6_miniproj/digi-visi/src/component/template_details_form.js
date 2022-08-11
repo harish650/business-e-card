@@ -166,7 +166,33 @@ const adddd=(a)=>{
             // body:JSON.stringify(values)}).then(res=>navigate("/tempdemodemo",{
             //   state:{h1:res.json()},}))
             // console.log("ok")
-            fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/tempdemodemo",{state:{h1:res[0]},});console.log(res[0])})
+
+            // fetch("/get_selected_id")
+            // fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/tempdemodemo",{state:{h1:res[0]},});console.log(res[0])})
+fetch("/get_selected_id",{method:"GET"}).then(res=>res.json()).then(res=>{if(res.val===0){
+   fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/tempdemodemo",{state:{h1:res[0]},});console.log(res[0])})
+}
+else if(res.val===2){
+  fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/temp",{state:{h1:res[0]},});console.log(res[0])})
+}
+else if(res.val===3){
+  fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/template1",{state:{h1:res[0]},});console.log(res[0])})
+}
+else if(res.val===4){
+  fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/template2",{state:{h1:res[0]},});console.log(res[0])})
+}
+else if(res.val===5){
+  fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/template2",{state:{h1:res[0]},});console.log(res[0])})
+}
+else if(res.val===6){
+  fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/tempdemo2",{state:{h1:res[0]},});console.log(res[0])})
+}
+else if(res.val===1){
+  fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/tempdemodemo",{state:{h1:res[0]},});console.log(res[0])})
+}
+})
+
+
              }
         
           }}
@@ -191,6 +217,7 @@ const adddd=(a)=>{
                     name="Contactno"
                     onChange={handleChange}
                     onBlur={handleBlur}
+                    required="true"
                     placeholder="Enter the company name"
                     value={values.Contactno}
                   />

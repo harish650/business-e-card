@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Razorpay from './component/razorpay';
 import Payment from './component/payment';
 import Navbar from './component/navbar';
 import { BrowserRouter } from 'react-router-dom';
@@ -7,7 +8,7 @@ import {Route,Routes} from 'react-router-dom'
 import Login from './component/login';
 import Register from './component/Register';
 import Dashboard from './component/dashboard/dashboard';
-import {Home} from   './component/Firstpage/Home';
+import Home from   './component/Firstpage/Home';
 import {About} from   './component/Firstpage/About';
 import { Template } from './component/dashboard/Template';
 import Tempdemodemo1 from "./component/tempdemodemo1"
@@ -49,6 +50,8 @@ function App () {
      <Route path="/dashboard" element={<Dashboard/>}></Route> 
      {/* <Route path="/templates" element={<Templates/>}></Route>  */}
   <Route path="/temp" element={<Template />}></Route>
+  <Route path="/razorpay" element={<Razorpay />}></Route>
+
   <Route path="/createcard" element={<Createcard />}></Route>
   <Route path="/viewcard" element={<Viewcard />}></Route>
   <Route path="/pricing" element={<Pricing />}></Route>

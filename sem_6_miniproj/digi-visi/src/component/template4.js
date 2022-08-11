@@ -5,7 +5,11 @@ import call4 from "../images/template_phone1.png"
 import mail4 from "../images/template4_mail.png"
 import loc from "../images/template4_loc4.png"
 import net from "../images/template4_net.png"
+import { useNavigate as UseNavigate } from 'react-router-dom'
+
 function template4() {
+  const navigate=UseNavigate()
+
   return (
     <div>
         <h1 style={{marginTop:"139px",
@@ -85,6 +89,7 @@ function template4() {
       borderRadius:"10px",
     rotate:""}} src={temp4}
         />
+        <button style={{position:"fixed",right:"200px",bottom:"200px",height:"60px",width:"200px",borderRadius:"20px",fontSize:"28px",color:"white",backgroundColor:"blue"}}onClick={()=>navigate("/payment")}>payment</button>
     </div>
   )
 }

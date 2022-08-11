@@ -10,7 +10,7 @@
     "@emotion/styled": "^11.10.0",
     "@google-pay/button-react": "^3.0.0",
     "@mui/icons-material": "^5.8.4",
-    "@mui/material": "^5.9.3",
+    "@mui/material": "^5.10.0",
     "@react-icons/all-files": "^4.1.0",
     "@syncfusion/ej2-react-charts": "^20.1.56",
     "@testing-library/jest-dom": "^5.16.4",

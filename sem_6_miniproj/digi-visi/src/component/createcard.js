@@ -18,6 +18,7 @@ const funct=(a)=>{
      fetch("/selected_template",{method:"POST",
      headers:{"Content-Type":"application/json"},
     body:JSON.stringify({selected:a.id})})
+    navigate("/template_details_form")
 
 
     

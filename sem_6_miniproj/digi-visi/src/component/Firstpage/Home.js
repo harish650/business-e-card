@@ -1,77 +1,88 @@
 import React from 'react'
-import { MdRoom,MdCall,MdOutlineLanguage,MdOutlineEmail} from "react-icons/md";
-import { ImWhatsapp } from "react-icons/im";
-import{TiSocialTwitter}  from "react-icons/ti";
-import { Navigate, useNavigate as UseNavigate } from 'react-router-dom'
 import './Home.css'
+import { useLocation as UseLocation } from 'react-router-dom'
+import { useNavigate as UseNavigate } from 'react-router-dom';
 
-export const Home = () => {
-  const navigate=UseNavigate();
-  const han=()=>{
-    navigate("/login")
-  }
-  return( 
-         <>
-         <div className='back'>
-           
-         <h1 className='head'>Welcome</h1>
-         <p className='sub-head'> Digital Visting Card <br></br> For Digital INDIA</p>
-         <p className='sub-head1'>Create an impression to your clients with your digital Visting card</p>
-         <div className='btnn'>
-           <button onClick={()=>han()}>CREATE VCARD</button>
-         </div>
-        
-           <div className='image'>
-                <img src="home.png"></img>
-         </div> 
-         </div>
-         <div className='fea-image'>
-           <h1 className='topic'>Digital Visting Card Feature</h1>
-           
-           <img src="./home-feat.jpg"></img>
-           </div>
-           <div className='ft'>
-           <h2 className='feature'><TiSocialTwitter className='sim' size="3%" />   Twitter</h2>
-          
-           <h2 className='feature1'> <MdRoom  className='sim' size="8%"/>  Navigate</h2>
-           <h2 className='feature'> <ImWhatsapp  className='sim' size="3%" />     Whatsapp on Click    </h2>
-           
-            <h2 className='feature1'> <MdCall className='sim' size="8%"/>  Call on Click </h2>
-           
-           <h2 className='feature'> <MdOutlineLanguage  className='sim' size="2%" /> Website Link</h2>
-           <h2 className='feature1'> <MdOutlineEmail className='sim' size="8%" /> Email on click</h2>
-          
-           </div>
-        <div className='footer'>
-          <center>  
-            <h1>Contact Us</h1>
-            <div className='foo-ali'>
-                  <MdCall color='white' size="5%" /> <h4 >PHONE NUMBER<br></br>+91 98765 43210</h4><br></br>
-                  <MdRoom  color='white' size="5%" />  <h4 >LOCATION<br></br>Erode</h4><br></br>
-                  <MdOutlineEmail color='white' size="5%" /> 
-                       <h4>EMAIL ADDRESS<br></br>webasetech@gamil.com</h4>
-                       </div>
-                       </center>
-                 
-                 
-                 
-            
-        </div>
-         </>
+export default function Home() {
+ const location=UseLocation();
+ const navigate = UseNavigate();
 
 
+  return (
+    <>
+    <div className='about-whole'>
+    <section id="submit">
        
+        <div className='row'>
+       
+        <div className='col-md-6'>
+          <img src="home.png" width={"80%"} height={"100%"} />
+        </div>
+       <div className='col-md-4'>
+        <br></br>
+        <h2 className='about_h3' style={{color:"white",padding:"30px"}}>DIGITAL BUSINESS CARD<br></br>For Digital INDIA </h2>
+        
+        <p className='about_p' style={{color:"white"}}>Create an impression to your clients with your digital business card</p>
+
+           <button class="button-28" role="button" onClick={()=>navigate("/login")}>Create Card</button>
+
+
+        </div>
+        </div>
+      <br></br>
+      <hr style={{backgroundColor: "black",height:"5px"}}></hr>
+      <h1 className='about-h1' >SHARE YOUR BUSINESS INFORMATION</h1>
+          <div className='content-box-lg'>
+            <div className='container'>
+              <div className='row'>
+                <div class='col-md-4'>
+                  <div className='about-item text-center'>
+                  <a href="register"> <img src='./about_1.jpg'  className='about_img'/> </a>
+                    <h3 className='about_h3'>Step 1</h3>
+                    <hr className='about_hr'></hr>
+                    <p className='about_p'>Register the account</p>
+             
+                  </div>
+                </div>
+                <div class='col-md-4'>
+                  <div className='about-item text-center'>
+                   <a href="register"><img src="./about1.png" className='about_img' /> </a>
+                    <h3 className='about_h3'>Step 2</h3>
+                    <hr className='about_hr'></hr>
+                    <p className='about_p'>Enter Business Details</p>
+                    
+                  </div>
+                </div>
+                <div className='col-md-4'>
+                  <div className='about-item text-center'>
+                    <a href="register"><img src="./about_2.png" className='about_img' /></a>
+                    <h3 className='about_h3'>Step 3</h3>
+                    <hr className='about_hr'></hr>
+                    <p className='about_p'>Share the link </p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+         
+      </div>
+    </section>
+    <div className='about_footer'>
+    <h1 className='about-h1'>Contact Us</h1>
+     <h4 className='about-h4'>PHONE NUMBER</h4>
+     <p className='about-footer-p'>+91 98765 45320</p>
+     <h4 className='about-h4'>EMAIL ADDRESS</h4>
+     <p className='about-footer-p'>webasetech@gmail.com</p>
+     <h4 className='about-h4'>LOCATION</h4>
+     <p className='about-footer-p'>Erode</p>
+    </div>
+    </div>
+    <div className='back-about'>
+         
+        </div>
+
+    </>
   )
 }
-
-
-
-
-
-
-
-
-
-
-
-
+ 

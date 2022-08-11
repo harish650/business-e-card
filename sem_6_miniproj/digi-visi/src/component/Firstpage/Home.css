@@ -1,125 +1,126 @@
-.back{
-    background: linear-gradient(to top, lime, 30%, cyan);
-}
-
-.head{
-    color:rgb(241, 32, 95);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-left: 80px;
-    padding-top: 30px;
-}
-
-.sub-head{
-    color: white;
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 40px;
-    padding-left: 60px;
-}
-.sub-head1{
-    color: white;
-    font-size: 20px;
-    padding-left: 60px;
-}
-
-.btnn{
-    padding-left: 390px;
-   
-   
-}
-.btnn button{
-    margin-top: 50px;
-    width: 30%;
-    background-color: white;
-    color: lime;
-    padding: 15px 0;
-    font-size: 20px;
-     border-color:lime ;
-    font-weight: 600;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 10px;
-}
-
-.btnn button:hover{
-    background-color: rgb(247, 244, 244);
-    color:cyan;
-    border-color: cyan;
-
-
-}
-
-.image img{
-    
-    border-radius: 4px;
-   margin-top: -420px;
-   margin-left: 780px;
-   width: 40%;  
-    transition: 2s;
-}
-
-.image img:hover{
-   
-    transform: translateX(-20px);
-    transition: 2s;
-
-}
-.topic{
-   
-    margin-left: 40%;
-    font-size: 40px;
-    color: aqua;
-
-}
-
-.feature{
-    margin-top: -190px;
-    margin-left: 150px;
-    font-size: 30px;
+.home-h1{
+    font-size: 50px;
+    font-weight: bold;
     font-style: italic;
-
+    text-align: center;
 }
-.feature1{
-    margin-left: 75%;
-    margin-top: -40px;
-
-}
-.ft{
-    margin-top: 140px;
-
-}
-.sim{
+.home-p{
+    font-size: 25px;
+    font-variant: small-caps;
+    color: black;
     padding-left: 40px;
-    padding-top: -150px;
-    color: rgb(9, 255, 0);
- 
-}
-.sim1{
-    margin-top: -50%;
-    color: rgb(9, 255, 0);
-}
+    font-weight: 500;
 
-.fea-image img{
-    width: 25%;
-  
-   border-radius: 30px;
-    margin-left: 40%;
-    margin-top: 80px;
-}
-
-.footer{
    
-    background-color: rgb(75, 56, 97);
-    margin-top: 100px;
-      color: #ddd;
-    padding: 20px;
-    border: 2px solid rgb(245, 243, 150);
 }
 
-.footer h4{
-    margin-left: 300px;
-    margin-top: -60px;
+.home-img{
+    width: 100%;
+    height: 100%;
+  
 }
 
-.foo-ali{
-    margin-left: -20%;
-} 
+
+
+.home-btn {
+    margin-left: 40%;
+    margin-top: 20%;
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.home-btn:active,
+.home-btn:hover {
+  outline: 0;
+}
+
+.home-btn span {
+  background-color: rgba(132, 93, 240, 0.514);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.home-btn:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .home-btn {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+.home-h3{
+  font-style: italic;
+  font-size: 35px;
+  font-weight: bold;
+ color: #00DDEB;
+}
+
+
+.button-28 {
+  appearance: none;
+  background-color: transparent;
+  border: 5px solid white;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 26px;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 160px;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}

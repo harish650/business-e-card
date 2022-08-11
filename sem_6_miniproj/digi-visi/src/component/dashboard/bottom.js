@@ -9,11 +9,18 @@ import database from '../../images/database.png'
 import file from '../../images/file.png'
 import "./bottom.css"
 import { useNavigate as  UseNavigate } from 'react-router-dom';
+import pricing from '../pricing';
 export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
   const navigate=UseNavigate()
   const editpage=()=>{
     fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/edittemplate",{state:{h1:res[0]},})})
+  }
+
+  const pricing=()=>{
+    fetch("/pricing_details",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/pricing"
+      ,{state:{h1:res.val},})
+    })
   }
   return (<>
   
@@ -45,7 +52,7 @@ export default function SimpleBottomNavigation() {
         <div className='bottom-card'> <BottomNavigationAction  icon={<img  style={{height:"33px",width:"33px"}}src={database}/>} />
         <h6>Database</h6></div>
 
-        <div className='bottom-card'> <BottomNavigationAction onClick={()=>navigate("/pricing")} icon={<img  style={{height:"33px",width:"33px"}}src={price}/>} />
+        <div className='bottom-card'> <BottomNavigationAction onClick={()=>pricing()} icon={<img  style={{height:"33px",width:"33px"}}src={price}/>} />
         <h6>Pricing</h6></div>
 
         </div>

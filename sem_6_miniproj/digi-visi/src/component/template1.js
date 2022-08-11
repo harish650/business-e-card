@@ -15,7 +15,11 @@ import place from "../images/place1.png"
 import lap from "../images/person1.png"
 import bg from "../images/backgr.jpg"
 import "./template1.css"
+import { useNavigate as UseNavigate } from 'react-router-dom'
+
 export default function template1() {
+  const navigate=UseNavigate()
+
   return (
     <div className='template1_bacgr'>
         <div className='template1_pos' >
@@ -68,6 +72,7 @@ export default function template1() {
           
           
         </div>
+        <button style={{position:"fixed",right:"200px",bottom:"200px",height:"60px",width:"200px",borderRadius:"20px",fontSize:"28px",color:"white",backgroundColor:"blue"}}onClick={()=>navigate("/payment")}>payment</button>
       </div>
 
     
