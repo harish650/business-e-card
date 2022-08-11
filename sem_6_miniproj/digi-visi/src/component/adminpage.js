@@ -100,7 +100,7 @@ const loaddata=()=>{
         </div>
         
         </div>
-        <div style={{display:"flex",position:"fixed",right:"300px"}}>
+        <div style={{display:"flex",position:"relative",marginLeft:"1050px"}}>
         <button  onClick={()=>getpay()}>refresh</button><h1>{vall}</h1>
 </div>
 
@@ -121,7 +121,7 @@ const loaddata=()=>{
     )}
 
           </div>
-        <div style={{display:"flex"}}>
+        {/* <div style={{display:"flex"}}>
 
         <div style={{display:"flex",height:"500px",width:"1000px",overflowY:"auto",marginTop:"50px",marginLeft:"30px",backgroundColor:"rgba(11, 3, 3, 0.155)",borderRadius:"20px"}}>
 
@@ -139,7 +139,7 @@ const loaddata=()=>{
        <div style={{marginLeft:"60px",width:"50px"}}>   <input type="file"  name="upload_photos_for_gallery" onChange={handleChangecompany} />
        <button onClick={()=>upload()}>upload</button></div>
           </div>
-          </div>
+          </div> */}
           <div style={{height:"400px",width:"1300px",display:"flex",marginTop:"120px",position:"relative",overflowY:"auto",marginLeft:"75px"}}>{images.map((id,index)=>
         <div >
         
