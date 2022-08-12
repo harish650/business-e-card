@@ -35,6 +35,17 @@ import Template2_demo from "./component/template2_demo"
 import Template3_demo from "./component/template3_demo"
 import Template4_demo from "./component/template4_demo"
 import Template5_demo from "./component/template5_demo"
+import Tempdemodemop from "./component/tempdemodemop"
+import Template1_demop from "./component/template1_demop"
+import Template2_demop from "./component/template2_demop"
+import Template3_demop from "./component/template3_demop"
+
+import Template4_demop from "./component/template4_demop"
+
+import Template5_demop from "./component/template5_demop"
+
+import Tempdemo2_demop from "./component/temodemo2_demop"
+import Tempp from "./component/dashboard/tempp"
 // import { initializeApp } from "firebase/app";
 // import { getAnalytics } from "firebase/analytics";
 // import Mainpage from './component/mainpage';
@@ -93,6 +104,27 @@ function App () {
   <Route path="/template3_demo" element={<Template3_demo />}></Route>
   <Route path="/template4_demo" element={<Template4_demo />}></Route>
   <Route path="/template5_demo" element={<Template5_demo />}></Route>
+
+
+  <Route path="/tempdemodemop" element={<Tempdemodemop />}></Route>
+
+  <Route path="/tempp" element={<Tempp />}></Route>
+
+  <Route path="/template1_demop" element={<Template1_demop />}></Route>
+
+  <Route path="/template2_demop" element={<Template2_demop />}></Route>
+
+  <Route path="/template3_demop" element={<Template3_demop />}></Route>
+
+  <Route path="/template4_demop" element={<Template4_demop />}></Route>
+
+  <Route path="/template5_demop" element={<Template5_demop />}></Route>
+
+  <Route path="/tempdemo2_demop" element={<Tempdemo2_demop />}></Route>
+
+
+
+
 
    </Routes> 
    </BrowserRouter>

@@ -516,7 +516,7 @@ function editemplate() {
             </div>
             <div className='edittemp_centrbor'></div>
             <div className='edittmep_temp'>
-            <label style={{marginTop:"20px",marginLeft:"160px",fontSize:"20px",fontStyle:"bold",fontWeight:"bold",}}>CLick to view the edited template</label>
+            
          <img onClick={()=>update()} style={{height:"550px",width:"500px",marginLeft:"50px",marginTop:"30px",borderRadius:"20px",filter:"blur(2px)"}}src={edittemp_right}/>
            
             

@@ -55,7 +55,7 @@ export default function Home() {
                 </div>
                 <div className='col-md-4'>
                   <div className='about-item text-center'>
-                    <a href="register"><img src="./about_2.png" className='about_img' /></a>
+                    <a href="register"><img src="./home_about.jpg" className='about_img' /></a>
                     <h3 className='about_h3'>Step 3</h3>
                     <hr className='about_hr'></hr>
                     <p className='about_p'>Share the link </p>

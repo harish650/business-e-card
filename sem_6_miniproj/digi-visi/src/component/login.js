@@ -88,7 +88,7 @@ const nav=(a)=>{
              onBlur={handleBlur}
              value={values.password}
            />
-           <label style={{color:"red",marginTop:"-4px",marginLeft:"140px"}}>forgot password</label>
+           {/* <label style={{color:"red",marginTop:"-4px",marginLeft:"140px"}}>forgot password</label> */}
            </div>
            {/* {errors.password && touched.password && errors.password} */}
           

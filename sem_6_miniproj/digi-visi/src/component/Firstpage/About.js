@@ -53,7 +53,7 @@ export const About = () => {
                 </div>
                 <div className='col-md-4'>
                   <div className='about-item text-center'>
-                    <img src="./about_2.png" className='about_img' />
+                    <img src="./home_about.jpg" className='about_img' />
                     <h3 className='about_h3'>Easily share and receive the Smart Visiting Cards through QR Code </h3>
                     <hr className='about_hr'></hr>
                     <p className='about_p'>Take the shortest route towards your customers through their mobile phones, Utilize our share option and make your brand viral by sharing your Digital Business card with your clients and connections. </p>

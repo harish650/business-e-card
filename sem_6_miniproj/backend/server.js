@@ -202,7 +202,7 @@ app.get("/adminpage_users",async(req,res)=>{
  console.log(reg);
 })
 app.get("/template_details_get",async(req,res)=>{
-    const det=await Template_details.find({loginusername:"bharani"});
+    const det=await Template_details.find({loginusername:loguser});
     console.log(loguser);
 
     // const det=await Template_details.find();

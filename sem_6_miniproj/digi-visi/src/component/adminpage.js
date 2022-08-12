@@ -101,7 +101,7 @@ const loaddata=()=>{
         
         </div>
         <div style={{display:"flex",position:"relative",marginLeft:"1050px"}}>
-        <button  onClick={()=>getpay()}>refresh</button><h1>{vall}</h1>
+        <button  onClick={()=>getpay()}>refresh</button><h1>{vall}/-Ruppees</h1>
 </div>
 
         <div style={{borderRadius:"20px",height:"500px",width:"800px",marginLeft:"30px",marginTop:"50px",backgroundColor:"white",boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",overflow:"auto"}}>
@@ -140,6 +140,7 @@ const loaddata=()=>{
        <button onClick={()=>upload()}>upload</button></div>
           </div>
           </div> */}
+          <h3 style={{marginTop:"20px",marginLeft:"600px",color:"blue"}}>Edit pricing details</h3>
           <div style={{height:"400px",width:"1300px",display:"flex",marginTop:"120px",position:"relative",overflowY:"auto",marginLeft:"75px"}}>{images.map((id,index)=>
         <div >
         

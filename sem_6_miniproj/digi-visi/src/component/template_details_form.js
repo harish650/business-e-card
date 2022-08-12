@@ -163,7 +163,8 @@ const adddd=(a)=>{
 
             // fetch("/template_details",{method:"POST",
             // headers:{"Content-Type":"application/json"},
-            // body:JSON.stringify(values)})
+            // body:JSON.stringify(values)}).then(res=>
+              {
 
             // fetch("/get_selected_id")
             // fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/tempdemodemo",{state:{h1:res[0]},});console.log(res[0])})
@@ -191,7 +192,8 @@ else if(res.val===1){
 else if(res.val===7){
   fetch("/template_details_get",{method:"GET"}).then(res=>res.json()).then(res=>{navigate("/template5_demo",{state:{h1:res[0]},});console.log(res[0])})
 }
-})
+})}
+//  )
 
 
              }
@@ -409,7 +411,7 @@ else if(res.val===7){
                     {/* <input type="file"
                       handleChange={(a)=>handleChangecompany(a.target.files[0])} name="enter product details" /> */}
 
-         <input
+         <input style={{width:"300px"}}
                   className="template_details_filr" type="file"  onChange={handleChangecompany}  />
                   </div></div>
                   <textarea
@@ -428,7 +430,7 @@ else if(res.val===7){
                     Product Photo</label>
                   <div className="template_details_photos">
 
-                    <input name="upload_photos_for_gallery" type="file" 
+                    <input  style={{width:"300px"}}name="upload_photos_for_gallery" type="file" 
                     multiline onChange={hanfleproductcompany} />
 <button onClick={()=>upload_product()}>Upload</button>
 
